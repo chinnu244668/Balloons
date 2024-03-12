@@ -62,7 +62,7 @@ using (var scope = app.Services.CreateScope())
     {
         if (!await roleManager.RoleExistsAsync(role)) 
         {
-            await roleManager.CreateAsync(new IdentityRole(role))
+            await roleManager.CreateAsync(new IdentityRole(role));
         }
     }
 }
@@ -81,7 +81,7 @@ using (var scope = app.Services.CreateScope())
             Email = email,
             UserName = email,
             EmailConfirmed = true
-        }
+        };
 
         await userManager.CreateAsync(adminUser, password);
 
