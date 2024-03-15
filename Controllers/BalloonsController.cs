@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BalloonWorld.Data;
 using BalloonWorld.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BalloonWorld.Controllers
 {
@@ -20,12 +21,14 @@ namespace BalloonWorld.Controllers
         }
 
         // GET: Balloons
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Balloon.ToListAsync());
         }
 
         // GET: Balloons/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,6 +47,7 @@ namespace BalloonWorld.Controllers
         }
 
         // GET: Balloons/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -52,6 +56,7 @@ namespace BalloonWorld.Controllers
         // POST: Balloons/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Material,Occasion,Size,Shape,Price")] Balloon balloon)
@@ -66,6 +71,7 @@ namespace BalloonWorld.Controllers
         }
 
         // GET: Balloons/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -84,6 +90,7 @@ namespace BalloonWorld.Controllers
         // POST: Balloons/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Material,Occasion,Size,Shape,Price")] Balloon balloon)
@@ -117,6 +124,7 @@ namespace BalloonWorld.Controllers
         }
 
         // GET: Balloons/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,6 +145,7 @@ namespace BalloonWorld.Controllers
         // POST: Balloons/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var balloon = await _context.Balloon.FindAsync(id);
