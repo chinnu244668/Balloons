@@ -131,4 +131,13 @@ Balloon@123
 
 thank you
 
+comments:
+
+we have learned alot of things of deploying a project, it was a great experience;
+cannot wait for the next tasks in the classes.
+
+thank you 
+team Nu.
+
+
 
