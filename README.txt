@@ -85,3 +85,50 @@ migrations.
 DATE - 2024-03-09
 TIME - 1730
 DO AUTHORIZATION AND AUTHENTICATION 
+
+DATE - 2024-03-09
+TIME - 1730
+Do authorize and Authentication 
+
+DATE 2024-03-11
+TIME 1530
+We all team members sit together and start work on our project. 
+Simarjit create logo for our project that is the BalloonWorld and attach in our project home page.
+
+Date 2024-03-11
+Time 1740
+Abhinav and Narsingh do  authontication and create user log in our project.
+guest login is simar@baloons1.com    and password Simar@123
+after this we start working on our deployment and did all the steps that are mention in the pdf step by step.
+ 
+
+Date 2024-03-11
+Time  1900
+We create admin account and did it successfully.
+admin account login admin@balloonworld.com    and password BALLOONSworld123!
+
+Date 2024-03-15
+Time 1925
+Update the Readme FIle. 
+
+***************************************************
+
+admin
+
+admin@balloonworld.com
+BALLOONSworld123!
+
+************************************************************
+normal register
+
+simar@baloons1.com
+Simar@123
+
+teamnu@balloonworld.com
+Balloon@123
+
+***********************************************************
+
+thank you
+
+
